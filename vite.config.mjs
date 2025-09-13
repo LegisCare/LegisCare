@@ -4,6 +4,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import tagger from "@dhiwise/component-tagger";
 
 // https://vitejs.dev/config/
+export default defineConfig({
+  base: './', // 👈 ADICIONA ESTA LINHA
+
   build: {
     outDir: "build",
     chunkSizeWarningLimit: 2000,
